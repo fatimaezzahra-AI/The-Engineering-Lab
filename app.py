@@ -7,7 +7,7 @@ st.title("The Engineering Lab 🚀")
 
 st.markdown("""
 ### Welcome to my Portfolio!
-I am **Fatima-Ezzahra**, an Aspiring AI Engineer. 
+I am **Fatima ezzahra Boukhorssa**, an Aspiring AI Engineer. 
 This space is dedicated to showcasing my technical projects, engineering insights, and AI solutions.
 
 ---
