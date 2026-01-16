@@ -10,8 +10,8 @@ selection = st.sidebar.radio("Go to", ["Home", "AI Project 1"])
 if selection == "Home":
     st.title("The Engineering Lab 🚀")
     st.subheader("Welcome to my Portfolio!")
-    st.write("I am **Fatima-Ezzahra**, an Aspiring AI Engineer.")
-    st.write("Current Focus: Building Scalable AI Applications.")
+    st.write("I am **Fatima ezzahra Boukhorssa **, an Aspiring AI Engineer.")
+    st.write("")
 
 elif selection == "AI Project 1":
     st.title("🌟 AI Project: Name Analyzer")
