@@ -1,20 +1,23 @@
 import streamlit as st
 
-# Page Configuration
+# Configuration dial l-page
 st.set_page_config(page_title="The Engineering Lab", page_icon="🚀")
 
-st.title("The Engineering Lab 🚀")
+# Sidebar fin ghadi n-zido l-projects
+st.sidebar.title("Navigation")
+selection = st.sidebar.radio("Go to", ["Home", "AI Project 1"])
 
-st.markdown("""
-### Welcome to my Portfolio!
-I am **Fatima ezzahra Boukhorssa**, an Aspiring AI Engineer. 
-This space is dedicated to showcasing my technical projects, engineering insights, and AI solutions.
+if selection == "Home":
+    st.title("The Engineering Lab 🚀")
+    st.subheader("Welcome to my Portfolio!")
+    st.write("I am **Fatima-Ezzahra**, an Aspiring AI Engineer.")
+    st.write("Current Focus: Building Scalable AI Applications.")
 
----
-#### ✨ Current Focus:
-* Building Scalable AI Applications
-* Data Engineering & Analysis
-* Interactive Web Dashboards with Streamlit
-""")
-
-st.sidebar.success("Select a project above.")
+elif selection == "AI Project 1":
+    st.title("🌟 AI Project: Name Analyzer")
+    st.write("This is a simple interactive project to show how Streamlit works.")
+    
+    name = st.text_input("Enter your name:")
+    if name:
+        st.success(f"Hello {name}! You have a great name for an AI Engineer! 💻")
+        st.balloons()
