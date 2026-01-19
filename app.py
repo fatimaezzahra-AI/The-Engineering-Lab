@@ -44,7 +44,7 @@ if selection == "🏠 Home":
 
     with col2:
         # Hna t-qdri t-diri t-swira dialek f l-mustaqbal
-        st.image("https://img.freepik.com/free-vector/ai-technology-concept-illustration_114360-10020.jpg", caption="AI Innovation")
+        st.image("assets/image1.jpg", caption="AI Innovation")
 
 elif selection == "🚀 My Projects":
     st.title("My AI Portfolio")
