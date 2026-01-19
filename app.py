@@ -44,7 +44,7 @@ if selection == "🏠 Home":
 
     with col2:
         # Hna t-qdri t-diri t-swira dialek f l-mustaqbal
-        st.image("assets/image1.jpg", caption="AI Innovation")
+        st.image("assets/image1.jpg", width=250)
 
 elif selection == "🚀 My Projects":
     st.title("My AI Portfolio")
