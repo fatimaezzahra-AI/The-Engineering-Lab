@@ -41,19 +41,24 @@ if selected == "About":
     
     col1, col2 = st.columns([2, 1], gap="large")
     with col1:
-        st.subheader("Data Analyst & SQL Specialist")
+        st.subheader("Bridging Applied Mathematics, AI, and Autonomous Systems")
         st.write("""
-        I am a diligent and enthusiastic data specialist with a strong foundational background 
-        in Relational Databases (SQL), Advanced Data Aggregations, and Business Intelligence dashboards.
-        My primary focus is on decoding complex relational architectures into business insights.
+        I am a Data and Machine Learning professional driven by a unique combination of **analytical rigor and right-brain creativity**. 
+        While my Master's degree in Applied Mathematics provides me with a strong foundation in complex logic and algorithmic design, 
+        my high visual intelligence motivates me to look beyond just raw code.
+        
+        I actively bridge the gap between theoretical AI and the physical world by exploring **Robotics, IoT, and intuitive application development**. 
+        I thrive f-the intersections where mathematical models power smart, automated, and human-centric systems.
         """)
-        st.markdown("#### Current Focus:")
-        st.success("⚡ Advanced SQL Joins & Business Logic Modeling")
-        st.success("📊 Interactive Web Analytics Dashboards")
+        
+        st.markdown("#### 🛠️ My Multi-Dimensional Core:")
+        st.success("🧬 **The Analytical Core:** Applied Mathematics, Machine Learning, and Predictive Modeling.")
+        st.success("🤖 **The Creative Exploration:** IoT, Robotics, and Real-time Smart System Automation.")
+        st.success("📊 **The Data Layer:** Advanced SQL, Relational Architecture, and Business Intelligence.")
         
     with col2:
-        # A nice developer illustration placeholder
-        st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250)
+        # رابط الصورة ديالك تقدري تبدليه من بعد
+        st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250, caption="Fatima-Ezzahra Boukhorssa")
 
 elif selected == "Projects":
     st.markdown("### 💼 Selected Analytics Projects")
