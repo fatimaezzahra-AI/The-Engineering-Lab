@@ -7,6 +7,17 @@ st.set_page_config(
     page_icon="📊", 
     layout="wide"
 )
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #0E1117;
+        color: #FAFAFA;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown("##### Welcome to my Professional Space")
 st.title("Applied Mathematics & Machine Intelligence")
