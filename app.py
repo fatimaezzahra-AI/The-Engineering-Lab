@@ -1,65 +1,69 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 
-# 1. Page Config (t-y-biyyeni l-icon o s-smiya f l-browser tab)
-st.set_page_config(page_title="Fatima ezzahra Boukhorssa | AI Lab", page_icon="🤖", layout="wide")
+# 1. Page Settings (Dark mode layout)
+st.set_page_config(
+    page_title="Fatima-Ezzahra | Data Portfolio", 
+    page_icon="📊", 
+    layout="wide"
+)
 
-# 2. Custom CSS bach n-zido l-jamaliya
-st.markdown("""
-    <style>
-    .main {
-        background-color: #0e1117;
+# 2. Hero Section (Top area)
+st.markdown("### Hey Fellas 👋")
+st.title("Welcome to my Data Portfolio")
+st.write("I extract, transform, and analyze relational database systems to uncover trends and drive strategic growth.")
+st.markdown("[Explore my GitHub](https://github.com) | [Connect on LinkedIn](https://linkedin.com)")
+st.markdown("---")
+
+# 3. The Professional Navigation Bar (The Horizontal Cadre from your image)
+# This creates the exact exact buttons styled beautifully in the center
+selected = option_menu(
+    menu_title=None, # No title needed on top
+    options=["About", "Projects", "Contact"], # The tabs
+    icons=["person", "code-slash", "envelope"], # The icons next to text
+    menu_icon="cast", 
+    default_index=0, 
+    orientation="horizontal", # Horizontal orientation like the screen
+    styles={
+        "container": {"padding": "0!important", "background-color": "#1E1E24"},
+        "icon": {"color": "#FF4B4B", "font-size": "16px"}, 
+        "nav-link": {"font-size": "16px", "text-align": "center", "margin": "0px", "--hover-color": "#2D2D34"},
+        "nav-link-selected": {"background-color": "#FF4B4B"}, # Color when selected (Red/Coral like the screen)
     }
-    .stHeading h1 {
-        color: #ff4b4b;
-        font-size: 3rem;
-    }
-    .project-card {
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid #4b4b4b;
-        margin-bottom: 10px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+)
 
-# 3. Sidebar Navigation
-with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/6134/6134346.png", width=100) # T-swira sghira
-    st.title("Navigation")
-    selection = st.radio("Go to:", ["🏠 Home", "🚀 My Projects", "📩 Contact Me"])
-
-if selection == "🏠 Home":
-    # Columns bach t-koun l-wajha wa3ra
-    col1, col2 = st.columns([2, 1])
+# 4. Content routing based on the selected Tab
+if selected == "About":
+    st.markdown("### I am Fatima-Ezzahra Boukhorssa")
     
+    col1, col2 = st.columns([2, 1], gap="large")
     with col1:
-        st.title("The Engineering Lab 🚀")
-        st.subheader("Hi, I'm Fatima-Ezzahra Boukhorssa")
-        st.write("I am an **Aspiring AI Engineer** dedicated to building scalable solutions and interactive data stories.")
-        st.markdown("---")
-        st.write("### ✨ Current Focus:")
-        st.write("✅ **Building Scalable AI Applications**")
-        st.write("✅ **Data Engineering & Analysis**")
-        st.write("✅ **Interactive Web Dashboards**")
-
+        st.subheader("Data Analyst & SQL Specialist")
+        st.write("""
+        I am a diligent and enthusiastic data specialist with a strong foundational background 
+        in Relational Databases (SQL), Advanced Data Aggregations, and Business Intelligence dashboards.
+        My primary focus is on decoding complex relational architectures into business insights.
+        """)
+        st.markdown("#### Current Focus:")
+        st.success("⚡ Advanced SQL Joins & Business Logic Modeling")
+        st.success("📊 Interactive Web Analytics Dashboards")
+        
     with col2:
-        # Hna t-qdri t-diri t-swira dialek f l-mustaqbal
-        st.image("assets/image1.jpg", width=250)
+        # A nice developer illustration placeholder
+        st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250)
 
-elif selection == "🚀 My Projects":
-    st.title("My AI Portfolio")
-    st.write("Explore my latest technical projects:")
+elif selected == "Projects":
+    st.markdown("### 💼 Selected Analytics Projects")
+    st.write("Here you will find my production-ready SQL and Data Analytics solutions.")
     
-    # Project Cards
-    with st.container():
-        st.markdown('<div class="project-card">', unsafe_allow_html=True)
-        st.subheader("Project 1: Name & AI Analyzer")
-        st.write("A tool that uses Streamlit to analyze text inputs in real-time.")
-        if st.button("Open Project 1"):
-            st.info("Check the 'pages' menu in the sidebar for the full demo!")
-        st.markdown('</div>', unsafe_allow_html=True)
+    # Placeholder container for the SQL project we prepared earlier
+    with st.expander("🚀 Project 1: Infrastructure Resource Allocation (SQL)"):
+        st.write("Click to see the business case, queries, and insights using `LEFT JOIN` and data filters.")
+        # Here we will inject our SQL code on the next step!
 
-elif selection == "📩 Contact Me":
-    st.title("Get In Touch")
-    st.write("Let's connect on LinkedIn or GitHub!")
-    st.write("[LinkedIn](https://www.linkedin.com/in/your-profile) | [GitHub](https://github.com/fatimaezzahra-ai)")
+elif selected == "Contact":
+    st.markdown("### ✉️ Let's Connect")
+    st.write("Feel free to reach out for internship opportunities, project collaborations, or data-related inquiries.")
+    
+    st.markdown("- **Email:** fati.ezzahra.boukhorssa@gmail.com")
+    st.markdown("- **GitHub:** github.com/yourprofile")
