@@ -51,14 +51,14 @@ if selected == "About":
         I thrive f-the intersections where mathematical models power smart, automated, and human-centric systems.
         """)
         
-        st.markdown("#### 🛠️ My Multi-Dimensional Core:")
+        st.markdown("####  My Multi-Dimensional Core:")
         st.success("🧬 **The Analytical Core:** Applied Mathematics, Machine Learning, and Predictive Modeling.")
         st.success("🤖 **The Creative Exploration:** IoT, Robotics, and Real-time Smart System Automation.")
         st.success("📊 **The Data Layer:** Advanced SQL, Relational Architecture, and Business Intelligence.")
         
     with col2:
         # رابط الصورة ديالك تقدري تبدليه من بعد
-        st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250, caption="Fatima-Ezzahra Boukhorssa")
+        st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250)
 
 elif selected == "Projects":
     st.markdown("### 💼 Selected Analytics Projects")
