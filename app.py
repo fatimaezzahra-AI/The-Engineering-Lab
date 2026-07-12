@@ -15,7 +15,7 @@ Welcome to my world, where mathematical theory meets machine intelligence.
 As a Master's student, I leverage advanced algorithms and statistical modeling to solve complex problems, 
 while applying these frameworks to extract actionable Business Insights through Data Analytics.
 """)
-st.markdown("[Explore My GitHub](https://github.com) | [Connect On LinkedIn](https://linkedin.com)")
+st.markdown("[Explore My GitHub](https://github.com/fatimaezzahra-AI) | [Connect On LinkedIn](https://www.linkedin.com/in/Fatima ezzahra Boukhorssa)")
 st.markdown("---")
 
 # 3. The Professional Navigation Bar (The Horizontal Cadre from your image)
