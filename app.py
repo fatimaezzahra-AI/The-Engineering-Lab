@@ -94,16 +94,16 @@ GROUP BY b.building_name, b.capacity;
             st.success("⚡ Handled continuous real-time data loops and dynamic hardware-to-mobile communication protocols.")
 
 elif selected == "Contact":
-    st.markdown("### ✉️ Get In Touch")
+    st.markdown("### Get In Touch")
     st.write("I am always open to discussing new projects, Data Science / AI opportunities, or potential collaborations.")
     
     # غانستفو الروابط بشكل نقي ومريح للعين
-    st.markdown("#### 🔗 Professional Channels:")
+    st.markdown("####  Professional Channels:")
     
     # ⚠️ هنا بدلي الروابط بـ الحسابات الحقيقية ديالك
-    st.info("📧 **Professional Email:** fatimaezzahraboukhorssa@gmail.com")
-    st.info("💼 **LinkedIn Profile:** [linkedin.com/in/fatima-ezzahra-boukhorssa](https://linkedin.com)")
-    st.info("💻 **GitHub Repository:** [github.com/fatimaezzahra-AI](https://github.com)")
+    st.info(" **Professional Email:** fatimaezzahraboukhorssa@gmail.com")
+    st.info(" **LinkedIn Profile:** [linkedin.com/in/fatima-ezzahra-boukhorssa](https://linkedin.com)")
+    st.info(" **GitHub Repository:** [github.com/fatimaezzahra-AI](https://github.com)")
     
     st.markdown("---")
-    st.caption("🚀 Designed with precision, bridging Mathematics and Machine Intelligence.")
+    st.caption(" Designed with precision, bridging Mathematics and Machine Intelligence.")
