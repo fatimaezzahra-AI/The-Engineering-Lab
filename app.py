@@ -8,11 +8,14 @@ st.set_page_config(
     layout="wide"
 )
 
-# 2. Hero Section (Top area)
-st.markdown("### Hey Fellas 👋")
-st.title("Welcome to my Data Portfolio")
-st.write("I extract, transform, and analyze relational database systems to uncover trends and drive strategic growth.")
-st.markdown("[Explore my GitHub](https://github.com) | [Connect on LinkedIn](https://linkedin.com)")
+st.markdown("##### Welcome to my Professional Space")
+st.title("Applied Mathematics & Machine Intelligence")
+st.write("""
+Welcome to my world, where mathematical theory meets machine intelligence. 
+As a Master's student, I leverage advanced algorithms and statistical modeling to solve complex problems, 
+while applying these frameworks to extract actionable Business Insights through Data Analytics.
+""")
+st.markdown("[Explore My GitHub](https://github.com) | [Connect On LinkedIn](https://linkedin.com)")
 st.markdown("---")
 
 # 3. The Professional Navigation Bar (The Horizontal Cadre from your image)
