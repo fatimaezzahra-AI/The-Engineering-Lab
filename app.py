@@ -4,7 +4,6 @@ from streamlit_option_menu import option_menu
 # 1. Page Settings (Dark mode layout)
 st.set_page_config(
     page_title="Fatima-Ezzahra | Data Portfolio", 
-    page_icon="📊", 
     layout="wide"
 )
 st.markdown(
@@ -63,55 +62,64 @@ if selected == "About":
         """)
         
         st.markdown("####  My Multi-Dimensional Core:")
-        st.success("🧬 **The Analytical Core:** Applied Mathematics, Machine Learning, and Predictive Modeling.")
-        st.success("🤖 **The Creative Exploration:** IoT, Robotics, and Real-time Smart System Automation.")
-        st.success("📊 **The Data Layer:** Advanced SQL, Relational Architecture, and Business Intelligence.")
+        st.success(" **The Analytical Core:** Applied Mathematics, Machine Learning, and Predictive Modeling.")
+        st.success(" **The Creative Exploration:** IoT, Robotics, and Real-time Smart System Automation.")
+        st.success(" **The Data Layer:** Advanced SQL, Relational Architecture, and Business Intelligence.")
         
     with col2:
         # رابط الصورة ديالك تقدري تبدليه من بعد
         st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250)
 
 elif selected == "Projects":
-    st.markdown("### 💼 Technical Project Portfolio")
+    st.markdown("###  Technical Project Portfolio")
     st.write("Welcome to my project hub. Select a category below to explore my solutions.")
     
     # هنا صاوبنا "الصاك" وقسمناه لـ 3 ديال "الجيوب" (Tabs)
-    tab_ai, tab_data, tab_iot = st.tabs(["🤖 Artificial Intelligence", "📊 Data Analytics (SQL)", "⚡ IoT & Robotics"])
+    tab_ai, tab_data, tab_iot = st.tabs([" Artificial Intelligence", " Data Analytics (SQL)", " IoT & Robotics"])
     
-    # 🛍️ الجيب الأول: AI
+    #  AI
     with tab_ai:
         st.markdown("#### Machine Learning & Predictive Modeling")
-        with st.expander("📌 Project: Predictive AI Models (Master's Focus)", expanded=True):
+        with st.expander(" Project: Predictive AI Models (Master's Focus)", expanded=True):
             st.write("Developing algorithms that leverage mathematical modeling to predict future business trends and data patterns.")
-            st.info("🚀 *Project pipeline is currently under development as part of my Master's thesis.*")
+            st.info(" *Project pipeline is currently under development as part of my Master's thesis.*")
 
-    # 🛍️ الجيب الثاني: Data Analytics
+    #  Data Analytics
     with tab_data:
         st.markdown("#### Database Engineering & SQL Solutions")
-        with st.expander("📌 Project: Corporate Resource Optimization via SQL", expanded=True):
+        with st.expander(" Project: Corporate Resource Optimization via SQL", expanded=True):
             st.code("""
 SELECT b.building_name, b.capacity, COUNT(e.role) AS total_employees
 FROM buildings b
 LEFT JOIN employees e ON b.building_name = e.building
 GROUP BY b.building_name, b.capacity;
             """, language="sql")
-            st.warning("💡 **Insight:** Used a `LEFT JOIN` to capture vacant buildings, highlighting high-cost underutilized assets for executive decision-making.")
-
-    # 🛍️ الجيب الثالث: IoT & Robotics
+            st.warning(" **Insight:** Used a `LEFT JOIN` to capture vacant buildings, highlighting high-cost underutilized assets for executive decision-making.")
+            st.divider() 
+        
+        with st.expander(" Project: Superstore Sales & Profit Analysis", expanded=True):
+            st.write("""
+            An end-to-end data analysis project using **Python**, **SQL (SQLite)**, and **Streamlit**. 
+            It analyzes retail performance, category profitability, and customer segments to extract actionable business insights.
+            """)
+            
+            st.link_button(" Launch Superstore Analytics App", "حطي_الرابط_ديال_App_هنا")
+            st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis")
+    #  IoT & Robotics
     with tab_iot:
         st.markdown("#### Smart Systems & Embedded Automation")
-        with st.expander("📌 Project: Real-Time IoT Bio-Signal Monitor", expanded=True):
+        with st.expander(" Project: Real-Time IoT Bio-Signal Monitor", expanded=True):
             st.write("Designed an integrated health monitoring system that captures live biometric data via sensors and transmits it to a mobile app via MIT App Inventor.")
-            st.success("⚡ Handled continuous real-time data loops and dynamic hardware-to-mobile communication protocols.")
+            st.success(" Handled continuous real-time data loops and dynamic hardware-to-mobile communication protocols.")
 
 elif selected == "Contact":
     st.markdown("### Get In Touch")
     st.write("I am always open to discussing new projects, Data Science / AI opportunities, or potential collaborations.")
     
-    # غانستفو الروابط بشكل نقي ومريح للعين
+    # 
     st.markdown("####  Professional Channels:")
     
-    # ⚠️ هنا بدلي الروابط بـ الحسابات الحقيقية ديالك
+    #  
     st.info(" **Professional Email:** fatimaezzahraboukhorssa@gmail.com")
     st.info(" **LinkedIn Profile:** [linkedin.com/in/fatima-ezzahra-boukhorssa](https://linkedin.com)")
     st.info(" **GitHub Repository:** [github.com/fatimaezzahra-AI](https://github.com)")
