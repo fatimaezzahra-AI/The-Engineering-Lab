@@ -95,16 +95,7 @@ LEFT JOIN employees e ON b.building_name = e.building
 GROUP BY b.building_name, b.capacity;
             """, language="sql")
             st.warning(" **Insight:** Used a `LEFT JOIN` to capture vacant buildings, highlighting high-cost underutilized assets for executive decision-making.")
-            st.divider() 
-        
-        with st.expander(" Project: Superstore Sales & Profit Analysis", expanded=True):
-            st.write("""
-            An end-to-end data analysis project using **Python**, **SQL (SQLite)**, and **Streamlit**. 
-            It analyzes retail performance, category profitability, and customer segments to extract actionable business insights.
-            """)
             
-            st.link_button(" Launch Superstore Analytics App", "حطي_الرابط_ديال_App_هنا")
-            st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis")
     #  IoT & Robotics
     with tab_iot:
         st.markdown("#### Smart Systems & Embedded Automation")
