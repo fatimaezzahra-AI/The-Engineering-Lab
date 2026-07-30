@@ -87,25 +87,15 @@ elif selected == "Projects":
             """)
             st.link_button(" Launch AI Predictive App", "https://superstore-sales-analysis-ai5nzfwgv9n5ebzndbbhvl.streamlit.app/")
             st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis")
-   # Data Analytics
+   # Data Analytics Tab
     with tab_data:
-        st.markdown("#### Database Engineering & SQL Solutions")
-    with st.expander("📊 Project: Corporate Resource Optimization via SQL", expanded=True):
-            st.code("""
-    SELECT b.building_name, b.capacity, COUNT(e.role) AS total_employees
-    FROM buildings b
-    LEFT JOIN employees e ON b.building_name = e.building
-    GROUP BY b.building_name, b.capacity;
-            """, language="sql")
-            st.warning("**Insight:** Used a `LEFT JOIN` to capture vacant buildings, highlighting high-cost underutilized assets for executive review.")
+        st.markdown("#### Database Engineering & Data Analytics")
+        st.info(" *Projects in this section are currently under development. Stay tuned!*")
 
-    # IoT & Robotics
+    # IoT & Robotics Tab
     with tab_iot:
         st.markdown("#### Smart Systems & Embedded Automation")
-    with st.expander(" Project: Real-Time IoT Bio-Signal Monitor", expanded=True):
-            st.write("Designed an integrated health monitoring system that captures live biometric data via sensors and transmits it to cloud endpoints.")
-            st.success("Handled continuous real-time data loops and dynamic hardware-to-mobile communication protocols.")
-
+        st.info(" *Projects in this section are currently under development. Stay tuned!*")
 elif selected == "Contact":
     st.markdown("### Get In Touch")
     st.write("I am always open to discussing new projects, Data Science / AI opportunities, or potential collaborations.")
