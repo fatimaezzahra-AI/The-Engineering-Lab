@@ -79,21 +79,21 @@ elif selected == "Projects":
     
    # AI
     with tab_ai:
-    st.markdown("#### Machine Learning & Predictive Analytics")
-    
-    with st.expander(" Project: Superstore Sales Forecasting & Predictive AI", expanded=True):
-        st.write("""
-        An end-to-end Machine Learning web application built with **Python**, **Scikit-Learn**, **Plotly**, and **Streamlit**.
-        It features interactive predictive models to forecast sales trends, analyze profit margins, and deliver actionable insights.
-        """)
-        st.link_button(" Launch AI Predictive App", "https://superstore-sales-analysis-ai5nzfwgv9n5ebzndbbhvl.streamlit.app/")
-        st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis")
+        st.markdown("#### Machine Learning & Predictive Analytics")
+        
+        with st.expander(" Project: Superstore Sales Forecasting & Predictive AI", expanded=True):
+            st.write("""
+            An end-to-end Machine Learning web application built with **Python**, **Scikit-Learn**, **Plotly**, and **Streamlit**.
+            It features interactive predictive models to forecast sales trends, analyze profit margins, and deliver actionable insights.
+            """)
+            st.link_button(" Launch AI Predictive App", "https://superstore-sales-analysis-ai5nzfwgv9n5ebzndbbhvl.streamlit.app/")
+            st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis")
 
         st.divider()
 
-    with st.expander(" Project: Predictive AI Models (Master's Focus)", expanded=False):
-        st.write("Developing algorithms that leverage mathematical modeling to predict future business trends and data patterns.")
-        st.info("*Project pipeline is currently under development as part of my Master's thesis.*")
+        with st.expander(" Project: Predictive AI Models (Master's Focus)", expanded=False):
+            st.write("Developing algorithms that leverage mathematical modeling to predict future business trends and data patterns.")
+            st.info("*Project pipeline is currently under development as part of my Master's thesis.*")
    # Data Analytics
     with tab_data:
         st.markdown("#### Database Engineering & SQL Solutions")
