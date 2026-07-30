@@ -67,14 +67,14 @@ if selected == "About":
         st.success(" **The Data Layer:** Advanced SQL, Relational Architecture, and Business Intelligence.")
         
     with col2:
-        # رابط الصورة ديالك تقدري تبدليه من بعد
+
         st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250)
 
 elif selected == "Projects":
     st.markdown("###  Technical Project Portfolio")
     st.write("Welcome to my project hub. Select a category below to explore my solutions.")
     
-    # هنا صاوبنا "الصاك" وقسمناه لـ 3 ديال "الجيوب" (Tabs)
+   
     tab_ai, tab_data, tab_iot = st.tabs([" Artificial Intelligence", " Data Analytics (SQL)", " IoT & Robotics"])
     
     #  AI
