@@ -78,7 +78,7 @@ elif selected == "Projects":
     tab_ai, tab_data, tab_iot = st.tabs([" Artificial Intelligence", " Data Analytics (SQL)", " IoT & Robotics"])
     
    # AI
-with tab_ai:
+    with tab_ai:
     st.markdown("#### Machine Learning & Predictive Analytics")
     
     with st.expander(" Project: Superstore Sales Forecasting & Predictive AI", expanded=True):
@@ -89,7 +89,7 @@ with tab_ai:
         st.link_button(" Launch AI Predictive App", "https://superstore-sales-analysis-ai5nzfwgv9n5ebzndbbhvl.streamlit.app/")
         st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis")
 
-    st.divider()
+        st.divider()
 
     with st.expander(" Project: Predictive AI Models (Master's Focus)", expanded=False):
         st.write("Developing algorithms that leverage mathematical modeling to predict future business trends and data patterns.")
@@ -97,19 +97,19 @@ with tab_ai:
    # Data Analytics
     with tab_data:
         st.markdown("#### Database Engineering & SQL Solutions")
-        with st.expander("📊 Project: Corporate Resource Optimization via SQL", expanded=True):
+    with st.expander("📊 Project: Corporate Resource Optimization via SQL", expanded=True):
             st.code("""
-SELECT b.building_name, b.capacity, COUNT(e.role) AS total_employees
-FROM buildings b
-LEFT JOIN employees e ON b.building_name = e.building
-GROUP BY b.building_name, b.capacity;
+    SELECT b.building_name, b.capacity, COUNT(e.role) AS total_employees
+    FROM buildings b
+    LEFT JOIN employees e ON b.building_name = e.building
+    GROUP BY b.building_name, b.capacity;
             """, language="sql")
             st.warning("**Insight:** Used a `LEFT JOIN` to capture vacant buildings, highlighting high-cost underutilized assets for executive review.")
 
     # IoT & Robotics
     with tab_iot:
         st.markdown("#### Smart Systems & Embedded Automation")
-        with st.expander(" Project: Real-Time IoT Bio-Signal Monitor", expanded=True):
+    with st.expander(" Project: Real-Time IoT Bio-Signal Monitor", expanded=True):
             st.write("Designed an integrated health monitoring system that captures live biometric data via sensors and transmits it to cloud endpoints.")
             st.success("Handled continuous real-time data loops and dynamic hardware-to-mobile communication protocols.")
 
