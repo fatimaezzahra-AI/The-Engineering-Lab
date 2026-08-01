@@ -86,7 +86,16 @@ elif selected == "Projects":
             It features interactive predictive models to forecast sales trends, analyze profit margins, and deliver actionable insights.
             """)
             st.link_button(" Launch AI Predictive App", "https://superstore-sales-analysis-ai5nzfwgv9n5ebzndbbhvl.streamlit.app/")
-            st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis")
+            st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/superstore-sales-analysis") 
+            # Frontex & Schengen Migration Project
+        with st.expander(" Project: Schengen Border Analytics & Risk Forecasting", expanded=True):
+            st.write("""
+            An interactive data analytics & ML dashboard analyzing European border crossing trends, detection patterns, and risk indicators using **Python**, **Pandas**, **Plotly**, and **Streamlit**.
+            """)
+
+            st.link_button(" Launch Migration Risk App", "https://schengen-border-analytics-korxhmjapzyyrktbbzxpf4.streamlit.app/")
+        
+            st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/schengen-border-analytics")
    # Data Analytics Tab
     with tab_data:
         st.markdown("#### Database Engineering & Data Analytics")
