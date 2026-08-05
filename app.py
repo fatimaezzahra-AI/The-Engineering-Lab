@@ -97,7 +97,7 @@ elif selected == "Projects":
         
             st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/schengen-border-analytics")
   # Data Analytics Tab
-   with tab_data:
+    with tab_data:
             st.markdown("#### Database Engineering & Data Analytics")
             st.markdown("#####  Inferential A/B Testing Lab")
             st.write("Interactive web application for conducting inferential statistical analysis, ""hypothesis testing, and A/B test evaluation."
