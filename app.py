@@ -108,8 +108,8 @@ elif selected == "Projects":
     )
     
     # 
-         st.link_button(" Open Live App", "https://inferential-ab-testing-lab-ghkzgswwphrktjdd8ici2z.streamlit.app/"
-         st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/inferential-ab-testing")
+          st.link_button(" Open Live App", "https://inferential-ab-testing-lab-ghkzgswwphrktjdd8ici2z.streamlit.app/"
+          st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/inferential-ab-testing")
     )
     # IoT & Robotics Tab
     with tab_iot:
