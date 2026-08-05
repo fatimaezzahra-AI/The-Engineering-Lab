@@ -97,10 +97,10 @@ elif selected == "Projects":
         
             st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/schengen-border-analytics")
   # Data Science & Analytics Tab
-    with tab_data:
-        st.markdown("#### Database Engineering & Data Science & Analytics ")
+with tab_data:
+    st.markdown("#### Database Engineering & Data Science & Analytics")
     
-        with st.expander("Project: Inferential A/B Testing Lab"):
+    with st.expander("Project: Inferential A/B Testing Lab"):
         st.write("Interactive web application for conducting inferential statistical analysis, hypothesis testing, and A/B test evaluation.")
         st.link_button("Open Live App", "https://inferential-ab-testing-lab-ghkzgswwphrktjdd8ici2z.streamlit.app/")
         st.link_button("View GitHub Repository", "https://github.com/fatimaezzahra-AI/inferential-ab-testing")
