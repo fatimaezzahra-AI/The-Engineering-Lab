@@ -23,7 +23,7 @@ st.title("Applied Mathematics & Machine Intelligence")
 st.write("""
 Welcome to my world, where mathematical theory meets machine intelligence. 
 As a Master's student, I leverage advanced algorithms and statistical modeling to solve complex problems, 
-while applying these frameworks to extract actionable Business Insights through Data Analytics.
+while applying these frameworks to extract actionable Business Insights through Data Science & Analytics .
 """)
 st.markdown("[Explore My GitHub](https://github.com/fatimaezzahra-AI) | (https://www.linkedin.com/in/Fatima_ezzahra_Boukhorssa)")
 st.markdown("---")
@@ -75,7 +75,7 @@ elif selected == "Projects":
     st.write("Welcome to my project hub. Select a category below to explore my solutions.")
     
    
-    tab_ai, tab_data, tab_iot = st.tabs([" Artificial Intelligence", " Data Analytics (SQL)", " IoT & Robotics"])
+    tab_ai, tab_data, tab_iot = st.tabs([" Artificial Intelligence", " Data Science & Analytics ", " IoT & Robotics"])
     
    # AI Tab
     with tab_ai:
@@ -96,9 +96,9 @@ elif selected == "Projects":
             st.link_button(" Launch Migration Risk App", "https://schengen-border-analytics-korxhmjapzyyrktbbzxpf4.streamlit.app/")
         
             st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/schengen-border-analytics")
-  # Data Analytics Tab
+  # Data Science & Analytics Tab
     with tab_data:
-            st.markdown("#### Database Engineering & Data Analytics")
+            st.markdown("#### Database Engineering & Data Science & Analytics ")
             st.markdown("#####  Inferential A/B Testing Lab")
             st.write("Interactive web application for conducting inferential statistical analysis, ""hypothesis testing, and A/B test evaluation."
                 )
