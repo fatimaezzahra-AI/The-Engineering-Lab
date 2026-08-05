@@ -96,11 +96,22 @@ elif selected == "Projects":
             st.link_button(" Launch Migration Risk App", "https://schengen-border-analytics-korxhmjapzyyrktbbzxpf4.streamlit.app/")
         
             st.link_button(" View GitHub Repository", "https://github.com/fatimaezzahra-AI/schengen-border-analytics")
-   # Data Analytics Tab
-    with tab_data:
-        st.markdown("#### Database Engineering & Data Analytics")
-        st.info(" *Projects in this section are currently under development. Stay tuned!*")
-
+  # Data Analytics Tab
+with tab_data:
+    st.markdown("#### Database Engineering & Data Analytics")
+    
+    #  Inferential A/B Testing Lab
+    st.markdown("#####  Inferential A/B Testing Lab")
+    st.write(
+        "Interactive web application for conducting inferential statistical analysis, "
+        "hypothesis testing, and A/B test evaluation."
+    )
+    
+    # 
+    st.link_button(
+        " Open Live App", 
+        "https://inferential-ab-testing-lab-ghkzgswwphrktjdd8ici2z.streamlit.app/"
+    )
     # IoT & Robotics Tab
     with tab_iot:
         st.markdown("#### Smart Systems & Embedded Automation")
