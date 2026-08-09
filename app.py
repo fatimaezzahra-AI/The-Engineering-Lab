@@ -51,24 +51,23 @@ if selected == "About":
     
     col1, col2 = st.columns([2, 1], gap="large")
     with col1:
-        st.subheader("Bridging Applied Mathematics, AI, and Autonomous Systems")
+        st.subheader("Bridging Applied Mathematics, and AI ")
         st.write("""
-        I am a Data and Machine Learning professional driven by a unique combination of **analytical rigor and right-brain creativity**. 
-        While my Master's degree in Applied Mathematics provides me with a strong foundation in complex logic and algorithmic design, 
-        my high visual intelligence motivates me to look beyond just raw code.
+        I am a Data and Machine Learning enthusiast currently completing a Master's in Applied Mathematics, with a strong foundation in statistical modeling, predictive analytics, and algorithm design.
+
+        My work spans forecasting business trends, analyzing large-scale datasets, and building interactive tools that turn raw data into actionable insights — from sales forecasting to risk analytics on real-world datasets. I've also explored how data-driven thinking extends beyond pure analytics, applying it to embedded systems and signal processing.
         
-        I actively bridge the gap between theoretical AI and the physical world by exploring **Robotics, IoT, and intuitive application development**. 
-        I thrive f-the intersections where mathematical models power smart, automated, and human-centric systems.
+        I'm driven by the intersection of rigorous mathematics and practical impact: building models and tools that are not just accurate, but usable and meaningful for real decision-making.
         """)
         
-        st.markdown("####  My Multi-Dimensional Core:")
-        st.success(" **The Analytical Core:** Applied Mathematics, Machine Learning, and Predictive Modeling.")
-        st.success(" **The Creative Exploration:** IoT, Robotics, and Real-time Smart System Automation.")
-        st.success(" **The Data Layer:** Advanced SQL, Relational Architecture, and Business Intelligence.")
+        st.markdown("####  My Core Skills:")
+        st.success(" **Machine Learning & Predictive Modeling:**Scikit-Learn (Random Forest, XGBoost), statistical modeling, feature engineering.")
+        st.success(" **Python, Pandas, Plotly, Streamlit — building interactive dashboards from raw data to insights.") 
+        st.success(" **Embedded Systems & Signal Processing:** Arduino, biomedical sensors, real-time data acquisition.")
         
     with col2:
 
-        st.image("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500", width=250)
+        st.image("images/maphoto.png", width=250)
 
 elif selected == "Projects":
     st.markdown("###  Technical Project Portfolio")
