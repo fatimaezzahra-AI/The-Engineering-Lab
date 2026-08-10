@@ -61,13 +61,13 @@ if selected == "About":
         """)
         
         st.markdown("####  My Core Skills:")
-        st.success(" **Machine Learning & Predictive Modeling:**Scikit-Learn (Random Forest, XGBoost), statistical modeling, feature engineering.")
-        st.success(" **Python, Pandas, Plotly, Streamlit — building interactive dashboards from raw data to insights.") 
-        st.success(" **Embedded Systems & Signal Processing:** Arduino, biomedical sensors, real-time data acquisition.")
+        st.success(" Machine Learning & Predictive Modeling:**Scikit-Learn (Random Forest, XGBoost), statistical modeling, feature engineering.")
+        st.success(" Python, Pandas, Plotly, Streamlit — building interactive dashboards from raw data to insights.") 
+        st.success(" Embedded Systems & Signal Processing:** Arduino, biomedical sensors, real-time data acquisition.")
         
     with col2:
 
-        st.image("images/maphoto.png", width=250)
+        st.image("assets/maphoto.png", width=250)
 
 elif selected == "Projects":
     st.markdown("###  Technical Project Portfolio")
