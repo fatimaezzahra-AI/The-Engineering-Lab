@@ -8,7 +8,7 @@ from streamlit_option_menu import option_menu
 GITHUB = "https://github.com/fatimaezzahra-AI"
 LINKEDIN = "https://www.linkedin.com/in/fatima-ezzahra-boukhorssa-09aa9a259"
 EMAIL = "fatimaezzahraboukhorssa@gmail.com"
-CV_EN = "assets/CV_Fatima_Ezzahra_Boukhorssa_EN.pdf"
+CV_EN = "assets/CV_Fatima_Ezzahra_Boukhorssa_EN .pdf"
 CV_FR = "assets/CV_Fatima_Ezzahra_Boukhorssa.pdf"
 
 # 1. Page settings
@@ -57,7 +57,7 @@ with c2:
 with c3:
     if os.path.exists(CV_EN):
         with open(CV_EN, "rb") as f:
-            st.download_button("Download CV (EN)", f, file_name="CV_Fatima_Ezzahra_Boukhorssa_EN.pdf",
+            st.download_button("Download CV (EN)", f, file_name="CV_Fatima_Ezzahra_Boukhorssa_EN .pdf",
                                mime="application/pdf")
 with c4:
     if os.path.exists(CV_FR):
