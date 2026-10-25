@@ -9,7 +9,7 @@ GITHUB = "https://github.com/fatimaezzahra-AI"
 LINKEDIN = "https://www.linkedin.com/in/fatima-ezzahra-boukhorssa-09aa9a259"
 EMAIL = "fatimaezzahraboukhorssa@gmail.com"
 CV_EN = "assets/CV_Fatima_Ezzahra_Boukhorssa_EN .pdf"
-CV_FR = "assets/CV_Fatima_Ezzahra_Boukhorssa.pdf"
+CV_FR = "assets/CV_Fatima_Ezzahra_Boukhorssa_FR.pdf"
 
 # 1. Page settings
 st.set_page_config(page_title="Fatima-Ezzahra | Data & AI Portfolio", layout="wide")
@@ -27,6 +27,15 @@ st.markdown(
         display: inline-block; background: #FF4B4B22; color: #FF8A8A;
         border: 1px solid #FF4B4B; border-radius: 999px;
         padding: 3px 12px; font-size: 0.85rem; margin-bottom: 8px;
+    }
+    /* Download buttons: dark text on white background */
+    .stApp button p,
+    .stApp button span,
+    .stApp [data-testid="stDownloadButton"] button * {
+        color: #0E1117 !important;
+    }
+    .stApp [data-testid="stDownloadButton"] button {
+        background-color: #FFFFFF !important;
     }
     </style>
     """,
@@ -57,12 +66,12 @@ with c2:
 with c3:
     if os.path.exists(CV_EN):
         with open(CV_EN, "rb") as f:
-            st.download_button("Download CV (EN)", f, file_name="CV_Fatima_Ezzahra_Boukhorssa_EN .pdf",
+            st.download_button("Download CV (EN)", f, file_name="CV_Fatima_Ezzahra_Boukhorssa_EN.pdf",
                                mime="application/pdf")
 with c4:
     if os.path.exists(CV_FR):
         with open(CV_FR, "rb") as f:
-            st.download_button("Télécharger CV (FR)", f, file_name="CV_Fatima_Ezzahra_Boukhorssa_EN.pdf",
+            st.download_button("Télécharger CV (FR)", f, file_name="CV_Fatima_Ezzahra_Boukhorssa_FR.pdf",
                                mime="application/pdf")
 st.markdown("---")
 
